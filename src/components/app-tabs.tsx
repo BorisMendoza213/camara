@@ -13,19 +13,23 @@ export default function AppTabs() {
       indicatorColor={colors.backgroundElement}
       labelStyle={{ selected: { color: colors.text } }}>
       <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/home.png')}
-          renderingMode="template"
-        />
+        <NativeTabs.Trigger.Label>Inicio</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="house.fill" md="home" />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="explore">
-        <NativeTabs.Trigger.Label>Explore</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/explore.png')}
-          renderingMode="template"
-        />
+      <NativeTabs.Trigger name="geocam">
+        <NativeTabs.Trigger.Label>Cámara</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="camera.fill" md="photo_camera" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="galeria">
+        <NativeTabs.Trigger.Label>Galería</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="photo.on.rectangle.angled" md="photo_library" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="mapa">
+        <NativeTabs.Trigger.Label>Mapa</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="map.fill" md="map" />
       </NativeTabs.Trigger>
     </NativeTabs>
   );
